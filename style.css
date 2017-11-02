@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
+html, body {
+  height: 100%;
+}
 body {
+  margin: 0;
   background-color: #D1A163;
   background-image: url("http://www.transparenttextures.com/patterns/wood-pattern.png");
   font-family: 'Roboto Condensed', sans-serif;
@@ -7,27 +12,33 @@ body {
   font-size: 16px;
   width: 100%;
 }
-
-ol, ul {
-  margin-top: 0;
-  margin-bottom: 5px;
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-a, a:active {
-  color: #AFAFAF;
-  text-decoration: none;
+.row {
+  width: auto;
 }
-
-a:hover {
-  color: #565656 !important;
-  text-decoration: none;
+.flex-item {
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
 }
 
 .content-panel {
   background-color: #FFFFFF;
   background-image: url("http://www.transparenttextures.com/patterns/paper.png");
   height: 200px;
-  width: 400px;
+  max-width: 400px;
+  min-width: 340px;
   padding-top: 20px;
   padding-bottom: 10px;
   padding-left: 30px;
@@ -35,27 +46,6 @@ a:hover {
   margin: 0 auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 1px;
-}
-
-.index {
-  height: 100%;
-  max-height: 100%;
-  width: 100%;
-  padding: 0px;
-  margin-top: 60px;
-}
-
-.header {
-  margin-top: 10px;
-  margin-left: 0%;
-  margin-bottom: 0px;
-  font-size: 32px;
-  width: 100%;
-}
-
-.resume-heading {
-  text-decoration: underline;
-  color: #AFAFAF;
 }
 
 .author-header {
@@ -79,13 +69,25 @@ a:hover {
   color: #616060;
 }
 
-a, a:active {
-  color: #AFAFAF;
+.index {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin-top: 60px;
 }
 
-a:hover {
+.header {
+  margin-top: 10px;
+  margin-left: 0%;
+  margin-bottom: 0px;
+  font-size: 32px;
+  width: 100%;
+}
+
+.resume-heading {
+  text-decoration: underline;
   color: #AFAFAF;
-  text-decoration: none;
 }
 
 .menu-items {
@@ -94,53 +96,11 @@ a:hover {
   font-size: 1.5em;
 }
 
-i {
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: .7em;
-}
-
-.fa {
+a, a:active {
   color: #AFAFAF;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  transition: 0.3s;
-  mix-blend-mode: multiply;
 }
 
-.fa-envelope:hover {
-  color: #565656;
-}
-
-.fa-facebook:hover {
-  color: #43609c;
-}
-
-.fa-twitter:hover {
-  color: #6dabda;
-}
-
-.fa-linkedin:hover {
-  color: #2b77b1;
-}
-
-.fa-google-plus:hover {
-  color: #c95644;
-}
-
-.fa-github-alt:hover {
-  color: #4078c0;
-}
-
-.fa-codepen:hover {
-  color: #FFFFFF;
-}
-
-.fa-stack-overflow:hover {
-  color: #c98b3b;
-}
-
-.flip-link {
-  text-align: center;
+a:hover {
+  color: #AFAFAF;
   text-decoration: none;
 }
