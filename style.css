@@ -6,7 +6,7 @@ html, body {
 body {
   margin: 0;
   background-color: #D1A163;
-  background-image: url("http://www.transparenttextures.com/patterns/wood-pattern.png");
+  background-image: url("./img/wood-pattern.png");
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -35,7 +35,7 @@ body {
 
 .content-panel {
   background-color: #FFFFFF;
-  background-image: url("http://www.transparenttextures.com/patterns/paper.png");
+  background-image: url("./img/paper.png");
   height: 200px;
   max-width: 400px;
   min-width: 340px;
